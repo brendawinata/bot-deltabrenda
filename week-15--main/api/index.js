@@ -6,7 +6,7 @@ const model = require('./sdk/model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1875119020:AAHGtM9gl6gdSqN7UOQwSFq207_CLw0Ic3o'
+const token = '1832761949:AAGo1UJbJjdPJdDZK39nHhEtg2vaNlAZ1L8'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -26,7 +26,7 @@ state = 0;
 bot.onText(/\/predict/, (msg) => { 
     bot.sendMessage(
         msg.chat.id,
-        `input nilai x|y|z example 4|3|2`
+        `input nilai x|y|z example 7|3|10`
     );   
     state = 1;
 });
